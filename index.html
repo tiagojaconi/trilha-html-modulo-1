@@ -1,62 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Blog do Jaconi - Módulo I - Primeiros Passos com HTML</title>
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+   <header>
+      <img style="width: 80px; border-radius: 50%; float: right;" src="data:image/jpeg;base64,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" alt="Tiago photo's">
+      <p>Blog do Jaconi</p>
+   </header>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+   <div class="container">
+      <nav>
+         <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+         <h2 id="indice"><i class="fa-solid fa-book"></i>Índice</i></h2>
+         <ol type="1">
+            <li><a href="#historia">História dos computadores</a></li>
+            <li><a href="#client">O que são <i>Clients</i>?</a></li>
+            <li><a href="#server">O que são <i>Servers</i>?</a></li>
+            <li><a href="#html">Como é uma estrutura básica de um HTML?</a></li>
+            <li><a href="#lista">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+            <li><a href="#referencia">Links de referências</a></li>
+         </ol>
+      </nav>
+      <main>
+         <section id="historia">
+            <h2><i class="fa-solid fa-computer"></i>História dos computadores</h2>
+            <h3>Primeira Geração</h3>
+   
+            <p>A primeira geração foi marcada pelos computadores que utilizavam <strong><i>válvulas</i></strong> e pelo tamanho dos computadores, podendo ocupar desde uma sala até o andar de um prédio.</p>
+            <p>Sua função principal era a realização de cálculos para fins militares.</p>
+   
+            <ul>
+               <li>
+                  <picture>
+                     <img src="image/mark-I.JPG" alt="Computador Mark I.">
+                     <figcaption>Harvard Mark I <a href="#mark"><sup>[1]</sup></a></figcaption>
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <img src="image/Two_women_operating_ENIAC.gif" alt="Duas mulheres operando o ENIAC.">
+                     <figcaption>ENIAC <a href="#eniac"><sup>[2]</sup></a></figcaption>
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <img src="image/Colossus.jpg" alt="Duas mulheres operando o Colossus.">
+                     <figcaption>Colossus <a href="#colossus"><sup>[3]</sup></a></figcaption>
+                  </picture>
+               </li>
+            </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <h3>Segunda Geração</h3>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <p>As válvulas deram lugar aos <strong><i>transistores</i></strong>, seu tamanho era 100 vezes menor, menor consumo de energia e mais rápido.</p>
+            <ul>
+               <li>
+                  <picture>
+                     <img src="image/TRADIC.jpg" alt="TRADIC primeiro modelo de computador transistorizado.">
+                     <figcaption>TRADIC <a href="#tradic"><sup>[4]</sup></a></figcaption>
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <img src="image/pdp-1.png" alt="Computador PDP-1.">
+                     <figcaption>PDP-1 <a href="#pdp"><sup>[5]</sup></a></figcaption>
+                  </picture>
+               </li>
+            </ul>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <h3>Terceira Geração</h3>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+            <p>Os transistores deram lugar aos <strong><i>circuitos integrados</i></strong> (<abbr title="circuito integrado">CI</abbr>), seu tamanho era 100 vezes menor, o consumo de energia menor e mais rápido.</p>
+            <ul>
+               <li>
+                  <picture>
+                     <img src="image/altair.jpg" alt="Altair primeiro computador portátil.">
+                     <figcaption>Altair 8800 <a href="#altair"><sup>[6]</sup></a></figcaption>
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <img src="image/apple-II.jpg" alt="Computador apple II.">
+                     <figcaption>Apple II <a href="#apple-II"><sup>[7]</sup></a></figcaption>
+                  </picture>
+               </li>
+            </ul>
+
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+
+            <h3>Quarta Geração</h3>
+
+            <p>Teve início com o lançamento do primeiro <strong><i>microprocessador</i></strong> (Intel 4004), uma característica importante é o surgimento do termo e popularização dos computadores pessoais.</p>
+            <ul>
+               <li>
+                  <picture>
+                     <img src="image/ibm-pc.jpg" alt="Computador IBM PC.">
+                     <figcaption>IBM PC <a href="#ibm"><sup>[8]</sup></a></figcaption>
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <img src="image/Lenovo_G500s_laptop-2905.jpg" alt="Laptop.">
+                     <figcaption>Laptop <a href="#laptop"><sup>[9]</sup></a></figcaption>
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <img src="image/LG_G4-2.jpg" alt="Smartphone LG geração 4.">
+                     <figcaption>Smartphone <a href="#smartphone"><sup>[10]</sup></a></figcaption>
+                  </picture>
+               </li>
+            </ul>
+
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+
+            <h3>Quinta Geração</h3>
+
+            <p>Acreditasse que estamos vivenciando essa geração, devido ao uso da <strong><i>Inteligência Artificial</i></strong> (<abbr title="Inteligência Artificial">IA</abbr>), podendo ser percebido em diversos setores do cotidiano.</p>
+            <ul>
+               <li>
+                  <picture>
+                     <img src="image/computador-quantico-ibm.webp" alt="Computador Quântico IBM.">
+                     <figcaption>Computador Quântico IBM <a href="#quantico"><sup>[11]</sup></a></figcaption>
+                  </picture>
+               </li>
+               <li>
+                  <picture>
+                     <img src="image/HONDA_ASIMO.jpg" alt="Robô Asimo da Honda.">
+                     <figcaption>Asimo <a href="#asimo"><sup>[12]</sup></a></figcaption>
+                  </picture>
+               </li>
+            </ul>
+
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+         </section>
+         
+         <section id="client">
+            <h2><i class="fa-solid fa-mobile-screen-button"></i>O que são <i>Clients</i>?</h2>
+            
+
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+         </section>
+         
+         <section id="server">
+            <h2><i class="fa-solid fa-server"></i>O que são <i>Servers</i>?</h2>
+            
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+         </section>
+
+         <section id="html">
+            <h2><i class="fa-brands fa-html5"></i>Como é uma estrutura básica de um HTML?</h2>
+           
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+         </section>
+   
+         <section id="lista">
+            <h2><i class="fa-solid fa-list-ol"></i>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+            
+            <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+         </section>
+         
+         <section id="referencia">
+            <h2><i class="fa-solid fa-link"></i>Links de referências</h2>
+         
+            <ul>
+               <li id="mark"><a target="_blank" href="https://pt.wikipedia.org/wiki/Harvard_Mark_I">[1] Harvard Mark I</a></li>
+               <li id="eniac"><a target="_blank" href="https://pt.wikipedia.org/wiki/ENIAC">[2] ENIAC</a></li>
+               <li id="colossus"><a target="_blank" href="httphttps://pt.wikipedia.org/wiki/Colossus_(computador)">[3] Colossus</a></li>
+               <li id="tradic"><a target="_blank" href="https://en.wikipedia.org/wiki/TRADIC">[4] TRADIC</a></li>
+               <li id="pdp"><a target="_blank" href="https://en.wikipedia.org/wiki/PDP-1">[5] PDP-1</a></li>
+               <li id="altair"><a target="_blank" href="https://en.wikipedia.org/wiki/Altair_8800">[6] Altair 8800</a></li>
+               <li id="apple-II"><a target="_blank" href="https://en.wikipedia.org/wiki/Apple_II">[7] Apple II</a></li>
+               <li id="ibm"><a target="_blank" href="https://pt.wikipedia.org/wiki/IBM_PC">[8] IBM PC</a></li>
+               <li id="laptop"><a target="_blank" href="https://pt.wikipedia.org/wiki/Laptop">[9] Laptop</a></li>
+               <li id="smartphone"><a target="_blank" href="https://pt.wikipedia.org/wiki/Smartphone">[10] Smartphone</a></li>
+               <li id="quantico"><a target="_blank" href="https://revistagalileu.globo.com/Ciencia/noticia/2021/12/como-os-computadores-quanticos-podem-mudar-o-mundo-que-conhecemos.html">[11] Computador Quântico IBM</a></li>
+               <li id="asimo"><a target="_blank" href="https://pt.wikipedia.org/wiki/ASIMO">[12] Honda Asimo</a></li>
+               <li><a target="_blank" href="http://dio.me">Dio.me</a></li>
+               <li><a target="_blank" href="http://w3c.org">W3C</a></li>
+            </ul>
+         </section>
+
+      </main>
+   </div>
+
+   <footer>
+      <p>Desenvolvido por Tiago Jaconi</p>
+   </footer>
+
+   <script src="https://kit.fontawesome.com/c8dd4fe33e.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

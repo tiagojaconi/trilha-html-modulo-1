@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+nav ol {
+    margin-left: 30px;
+}
+
+nav ol a, main ul{
+    text-decoration: none;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+html {
+    background-color: rgb(63, 61, 61);
+}
+
+
+header {
+    margin: 20px auto;
+    font-size: 36px;
+    font-style: italic;
+    font-family:  Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(238, 235, 235);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.photo-user {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-right: 20px;
+}
+
+.container {
+    margin: 0 40px;
+    min-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 hsla(0, 8%, 3%, 0.8);
+    background-color: rgb(238, 235, 235);;
+    border-left: 2px solid rgb(149, 146, 146);
+}
+
+h1{
+    margin-bottom: 10px;
+    color: rgb(53, 92, 165);
+}
+
+h2{
+    color: rgb(62, 70, 85);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(63, 61, 61);
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(180, 169, 169);
+}
+
+footer p{
+    background-color: rgb(63, 61, 61);
+    color: rgb(238, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+main section img {
+    display: block;
+    width: 300px;
+    height: 250px;
+    margin: 5px auto;
+}
+
+main section figcaption {
+    text-align: center;
+}
+
+main section p {
+    text-align: justify;
+    padding: 10px;
+}
