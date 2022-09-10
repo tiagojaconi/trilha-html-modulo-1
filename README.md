@@ -14,3 +14,6 @@ Este desafio vai fazer com que tenha dúvidas, o que é ótimo! Aos poucos você
 Após concluído este desafio! Siga para o <strong>Módulo II - Conceitos Básicos.</strong>
 
 Nos vemos lá!
+
+<h2>Resultado final:</h2>
+<img width="500px" src="image/projeto-final.gif">

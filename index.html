@@ -26,6 +26,9 @@
             <li><a href="#referencia">Links de referências</a></li>
          </ol>
       </nav>
+
+      <hr>
+
       <main>
          <section id="historia">
             <h2><i class="fa-solid fa-computer"></i>História dos computadores</h2>
@@ -56,6 +59,7 @@
             </ul>
 
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+            <hr>
 
             <h3>Segunda Geração</h3>
 
@@ -76,6 +80,7 @@
             </ul>
 
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+            <hr>
 
             <h3>Terceira Geração</h3>
 
@@ -96,6 +101,7 @@
             </ul>
 
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+            <hr>
 
             <h3>Quarta Geração</h3>
 
@@ -122,6 +128,7 @@
             </ul>
 
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
+            <hr>
 
             <h3>Quinta Geração</h3>
 
@@ -143,32 +150,134 @@
 
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
          </section>
-         
+         <hr>
+
          <section id="client">
             <h2><i class="fa-solid fa-mobile-screen-button"></i>O que são <i>Clients</i>?</h2>
-            
+            <p>
+               <mark>Clients</mark> são responsáveis por solicitar informações (serviços) dos servidores, podemos citar como exemplo os dispositivos moveis, aplicações web, navegadores, etc.
+            </p>
+
+            <blockquote cite="https://en.wikipedia.org/wiki/Client_(computing)">
+               <p>Em computação, um cliente é uma peça de hardware ou software de computador que acessa um serviço disponibilizado por um servidor como parte do modelo cliente-servidor de redes de computadores.</p>
+            </blockquote>
+            <blockquote cite="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">
+               <p>Um cliente geralmente não compartilha nenhum de seus recursos, mas <u>solicita conteúdo ou serviço de um servidor</u>. Os clientes, portanto, iniciam sessões de comunicação com os servidores, que aguardam solicitações recebidas.</p>
+            </blockquote>
+
+            <picture>
+               <img src="image/Client-server-model.svg.png" alt="Diagrama de rede de computadores no modelo clinte servidor">
+               <figcaption>Modelo cliente-servidor</figcaption>
+            </picture>
 
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
          </section>
-         
+         <hr>
+
          <section id="server">
             <h2><i class="fa-solid fa-server"></i>O que são <i>Servers</i>?</h2>
+            <p>
+               <mark>Server</mark> são responsáveis por fornecer informações (serviços) para os clientes, podemos citar como exemplo os servidores de arquivos, firewall, web, etc.
+            </p>
+
+            <blockquote cite="https://en.wikipedia.org/wiki/Client_(computing)">
+               <p>O servidor geralmente (mas nem sempre) está em outro sistema de computador, caso em que o cliente acessa o serviço por meio de uma rede.</p>
+            </blockquote>
+            <blockquote cite="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">
+               <p>Um host de servidor executa um ou mais programas de servidor, que <u>compartilham seus recursos com clientes</u>.</p>
+            </blockquote>
             
+            <picture>
+               <img src="image/Client-server-model.svg.png" alt="Diagrama de rede de computadores no modelo clinte servidor">
+               <figcaption>Modelo cliente-servidor</figcaption>
+            </picture>
+
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
          </section>
+         <hr>
 
          <section id="html">
             <h2><i class="fa-brands fa-html5"></i>Como é uma estrutura básica de um HTML?</h2>
            
+            <p>
+               O HTML é uma linguagem de marcação de hipertexto, sua função é definir o significado e a estrutura do conteúdo da página. Ele tem uma função semântica, informando aos navegadores o que cada bloco de texto quer representar e como exibir o conteúdo na página. 
+            </p>
+            <p>
+               O HTML é composto por Tags, para formar uma Tag usamos o sinal de menor "<" e maior ">", dentro dela temos o nome e as propriedades que podemos ou não colocar em nossos elementos. 
+            </p>
+            <p>A estrutura básica do html pode ser observada abaixo:</p>
+
+            <pre class="html-code">
+               <code>
+                  <span><</span><span>!</span><span class="tag-html">DOCTYPE</span><span>></span>
+                  <span><</span><span class="tag-html">html</span> <span class="prop-html">lang</span><span class="tag-html">=</span><span class="texto-prop-html">"pt-br"</span><span>></span>
+                     <span><</span><span class="tag-html">head</span><span>></span>
+                     <span><</span><span>/</span><span class="tag-html">head</span><span>></span>
+                     <span><</span><span class="tag-html">body</span><span>></span>
+                        <span><</span><span class="tag-html">header</span><span>></span>
+                        <span><</span><span>/</span><span class="tag-html">header</span><span>></span>
+
+                        <span><</span><span class="tag-html">main</span><span>></span>
+                        <span><</span><span>/</span><span class="tag-html">main</span><span>></span>
+
+                        <span><</span><span class="tag-html">footer</span><span>></span>
+                        <span><</span><span>/</span><span class="tag-html">footer</span><span>></span>
+                     <span><</span><span>/</span><span class="tag-html">body</span><span>></span>
+                  <span><</span><span>/</span><span class="tag-html">html</span><span>></span>
+               </code>
+            </pre>
+
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
          </section>
-   
+         <hr>
+
          <section id="lista">
             <h2><i class="fa-solid fa-list-ol"></i>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
             
+            <p>Listas ordenadas possuem uma estrutura formada com uma numeração antes dos elementos.</p>
+            <p>O código abaixo é uma lista ordenada de 3 itens:</p>
+
+            <pre>
+               <code>
+                  <span><</span><span class="tag-html">ol</span><span>></span>
+                     <span><</span><span class="tag-html">li</span><span>></span>Item 1<span><</span><span>/</span><span class="tag-html">li</span><span>></span>
+                     <span><</span><span class="tag-html">li</span><span>></span>Item 2<span><</span><span>/</span><span class="tag-html">li</span><span>></span>
+                     <span><</span><span class="tag-html">li</span><span>></span>Item 3<span><</span><span>/</span><span class="tag-html">li</span><span>></span>
+                  <span><</span><span>/</span><span class="tag-html">ol</span><span>></span>
+               </code>
+            </pre>
+
+            <p>Resultado visto no navegador:</p>
+            <ol>
+               <li>Item 1</li>
+               <li>Item 2</li>
+               <li>Item 3</li>
+            </ol>
+
+            <p>Listas <b>não</b> ordenadas possuem uma estrutura formada <del>com</del> <b>sem</b> uma numeração antes dos elementos.</p>
+            <p>O código abaixo é uma lista ordenada de 3 itens:</p>
+
+            <pre>
+               <code>
+                  <span><</span><span class="tag-html">ul</span><span>></span>
+                     <span><</span><span class="tag-html">li</span><span>></span>Item 1<span><</span><span>/</span><span class="tag-html">li</span><span>></span>
+                     <span><</span><span class="tag-html">li</span><span>></span>Item 2<span><</span><span>/</span><span class="tag-html">li</span><span>></span>
+                     <span><</span><span class="tag-html">li</span><span>></span>Item 3<span><</span><span>/</span><span class="tag-html">li</span><span>></span>
+                  <span><</span><span>/</span><span class="tag-html">ul</span><span>></span>
+               </code>
+            </pre>
+
+            <p>Resultado visto no navegador:</p>
+            <ul style="list-style-type: disc;">
+               <li>Item 1</li>
+               <li>Item 2</li>
+               <li>Item 3</li>
+            </ul>
+
             <a href="#indice"><i class="fa-solid fa-arrow-left"></i>Voltar ao indice</a>
          </section>
-         
+         <hr>
+
          <section id="referencia">
             <h2><i class="fa-solid fa-link"></i>Links de referências</h2>
          
@@ -185,8 +294,12 @@
                <li id="smartphone"><a target="_blank" href="https://pt.wikipedia.org/wiki/Smartphone">[10] Smartphone</a></li>
                <li id="quantico"><a target="_blank" href="https://revistagalileu.globo.com/Ciencia/noticia/2021/12/como-os-computadores-quanticos-podem-mudar-o-mundo-que-conhecemos.html">[11] Computador Quântico IBM</a></li>
                <li id="asimo"><a target="_blank" href="https://pt.wikipedia.org/wiki/ASIMO">[12] Honda Asimo</a></li>
-               <li><a target="_blank" href="http://dio.me">Dio.me</a></li>
-               <li><a target="_blank" href="http://w3c.org">W3C</a></li>
+               <li><a target="_blank" href="https://en.wikipedia.org/wiki/Client_(computing)">[13] Clients</a></li>
+               <li><a target="_blank" href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">[14] Modelo Cliente-Servidor</a></li>
+               <li><a target="_blank" href="https://www.w3schools.com/html/default.asp">[15] HTML - w3schools</a></li>
+               <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">[16] HTML - Mdn Web Docs</a></li>
+               <li><a target="_blank" href="http://w3c.org">[17] W3C</a></li>
+               <li><a target="_blank" href="http://dio.me">[18] Dio.me</a></li>
             </ul>
          </section>
 
