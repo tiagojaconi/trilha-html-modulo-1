@@ -17,8 +17,8 @@ Nos vemos lá!
 
 <h2>Resultado final:</h2>
 <h3>Header</h3>
-<img width="500px" src="image/projeto-final-header.png">
+<img width="500px" src="image/projeto-final-header.PNG">
 <h3>Footer</h3>
-<img width="500px" src="image/projeto-final-footer.png">
+<img width="500px" src="image/projeto-final-footer.PNG">
 <h3>Gif</h3>
 <img width="500px" src="image/projeto-final.gif">
